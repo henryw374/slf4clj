@@ -28,20 +28,16 @@
   ([msg kvs & [throwable]] `(log (logger) Level/ERROR ~msg ~kvs ~throwable)))
 
 (defmacro debug
-  ([msg kvs & [throwable]] `(let [builder# (-> (.atDebug (logger)))]
-                              (log builder# ~msg ~kvs ~throwable))))
+  ([msg kvs & [throwable]] `(log (logger) Level/DEBUG ~msg ~kvs ~throwable)))
 
 (defmacro info
-  ([msg kvs & [throwable]] `(let [builder# (-> (.atInfo (logger)))]
-                              (log builder# ~msg ~kvs ~throwable))))
+  ([msg kvs & [throwable]] `(log (logger) Level/INFO ~msg ~kvs ~throwable)))
 
 (defmacro trace
-  ([msg kvs & [throwable]] `(let [builder# (-> (.atTrace (logger)))]
-                              (log builder# ~msg ~kvs ~throwable))))
+  ([msg kvs & [throwable]] `(log (logger) Level/TRACE ~msg ~kvs ~throwable)))
 
 (defmacro warn
-  ([msg kvs & [throwable]] `(let [builder# (-> (.atWarn (logger)))]
-                              (log builder# ~msg ~kvs ~throwable))))
+  ([msg kvs & [throwable]] `(log (logger) Level/ERROR ~msg ~kvs ~throwable)))
 
 
 (comment 
