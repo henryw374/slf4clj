@@ -1,3 +1,5 @@
+[![Clojars Project](https://img.shields.io/clojars/v/com.widdindustries/slf4clj.svg)]
+
 # slf4clj
 
 Log data, not strings - with SLF4J
