@@ -1,4 +1,4 @@
-[![Clojars Project](https://img.shields.io/clojars/v/com.widdindustries/slf4clj.svg)]
+![Clojars Project](https://img.shields.io/clojars/v/com.widdindustries/slf4clj.svg)
 
 # slf4clj
 
